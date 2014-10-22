@@ -40,7 +40,7 @@ Vagrant.configure("2") do |config|
   # Example for VirtualBox:
   #
   config.vm.provider :virtualbox do |vb|
-    vb.name = "CentOS6.4_Work"
+    vb.name = "CentOS6.4"
   end
 
   #   # Don't boot with headless mode
