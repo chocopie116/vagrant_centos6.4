@@ -12,13 +12,13 @@ Vagrant.configure("2") do |config|
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
   config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-64-x64-vbox4210.box"
-  config.vm.hostname = "centos64work.local"
+  config.vm.hostname = "centos-6.4-work"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   # config.vm.network :forwarded_port, guest: 80, host: 8080
-  config.vm.network :private_network, ip: "192.168.56.111" 
+  config.vm.network :private_network, ip: "192.168.56.115"
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -40,7 +40,7 @@ Vagrant.configure("2") do |config|
   # Example for VirtualBox:
   #
   config.vm.provider :virtualbox do |vb|
-    vb.name = "CentOS6.4"
+    vb.name = "CentOS-6.4"
   end
 
   #   # Don't boot with headless mode
